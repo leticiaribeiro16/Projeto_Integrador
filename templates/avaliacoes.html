@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block titulo %}
+  Avaliações
+{% endblock %}
+
+{% block container%}
+<section id="section-avaliacao">
+  <h1 class="experiencia-title">Experiência no Site</h1><br>
+	<ul class="card-avaliacao">
+		{% for c in clientes %}
+			<li class="list-avaliacao"> Avaliação de {{ c.nome }} <br>Nota: 
+        {% for n in range(c.nota) %}
+        <img src="static/img/estrela.png" width="20px" height="20px">
+        {% endfor %}
+      </li>
+		{% endfor %}
+	</ul>
+</section>
+{% endblock %}

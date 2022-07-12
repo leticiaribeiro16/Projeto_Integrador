@@ -1,0 +1,28 @@
+{% extends 'index.html' %}
+  {% block titulo %}
+  Solicitação
+{% endblock %}
+{% block container%}
+<section id="section-solicitacao">
+  <h1>Formulário de solicitação de vagas para TAL</h1><br>
+<form action="" method="post">
+  <label>Informe a disciplina/área relacionada a vaga:</label><br>
+   <input type="text" name="input"><br><br>
+<br>
+  <label>Liste o conteúdo para prova a ser realizada pelos candidatos para as vagas relacionadas a disciplina/área:</label><br>
+  <input type="text" name="input"><br><br>
+
+  <label><br>Informe o nome dos possíveis orientadores para os tutores desta respectiva disciplina/área:</label><br>
+  <input type="text" name="input"><br><br>
+
+  <label><br>Descreva os pré-requisitos necessários para o candidato:</label><br>
+  <input type="text" name="input"><br><br>
+
+  <label><br>Informe o número de vagas solicitadas de acordo com a modalidade/turno:</label><br>
+  <input type="text" name="input"><br><br>
+
+  <input type="submit" value="Enviar" class="btn-3"></input>
+</form> 
+</section>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+       <meta charset="utf-8"/>
+       <title>
+         Help! - 
+         {% block titulo %} Home {% endblock %}
+       </title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   </head>
+   <body>
+     <header>
+       <nav>
+        <img src="/static/img/LOGO_HELP.svg" alt="logo" width="5%" class="img-logo-index">
+         <ul>
+          <li><a href='/home'>Home </a></li>
+          <li><a href='/sobre/projeto'>Projeto</a></li>
+          <li><a href='/sobre/equipe'>Equipe</a></li>
+          <li><a href='/solicitacao'>Solicitação </a></li>
+          <li><a href='/inscricao'>Inscrição TAL </a></li>
+          <li><a href='/avaliacoes'>Avaliações </a></li>
+         </ul>
+       </nav>
+     </header>
+     {% block container %}
+      <main class="wrapper">
+        <section class="section-one">
+          <h1>Me dá um <img src="../static/img/LOGO_HELP.svg" class="logo"></h1>
+        </section>
+        <section class="section-buttons">
+          <button class="btn-1">Buscar</button>
+          <input type="text" name="input" placeholder="Digite sua busca aqui" id="search">
+        </section>
+      </main>
+      {% endblock %}
+   </body>
+</html>

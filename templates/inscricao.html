@@ -1,0 +1,36 @@
+{% extends 'index.html' %}
+  {% block titulo %}
+  Seleção TAL
+{% endblock %}
+{% block container%}
+<section class="section-inscricao">
+  <div class="content">
+  <h1>Formulário de Seleção para Bolsista TAL</h1>
+  <form action="" method="post">
+    <div class="field">
+      <label>Nome Completo</label>
+      <input type="text" name="input" required placeholder="Insira seu nome completo">
+    </div>
+    <div class="field">
+      <label>E-mail</label>
+      <input type="text" name="input" required placeholder="Insira seu melhor e-mail">
+    </div>
+    <div class="field">
+      <label>Matrícula</label><br>
+      <input type="text" name="input" required placeholder="Insira sua matrícula">
+    </div>
+    <div class="field">
+      <label>Celular</label>
+      <input type="text" name="input" required placeholder="Preferencialmente Whatsapp">
+    </div>
+    <div class="field">
+      <label>Vaga Pretendida</label>
+      <input type="text" name="input" required placeholder="Qual a vaga que pretende ocupar?">
+    </div>
+    <div class="field">
+      <input type="submit" value="Enviar"></input>
+    </div>
+  </form> 
+</div>
+</section>
+{% endblock %}
